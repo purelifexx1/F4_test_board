@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:F4_Discovery F1
+U 1 1 60642152
+P 4250 3650
+F 0 "F1" H 4225 5065 50  0000 C CNN
+F 1 "F4_Discovery" H 4225 4974 50  0000 C CNN
+F 2 "custom:F4_discovery" H 4200 3350 50  0001 C CNN
+F 3 "" H 4200 3350 50  0001 C CNN
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60644A90
+P 6300 1250
+F 0 "SW1" V 6254 1398 50  0000 L CNN
+F 1 "SW_Push" V 6345 1398 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 6300 1450 50  0001 C CNN
+F 3 "~" H 6300 1450 50  0001 C CNN
+	1    6300 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 606457FB
+P 6900 1250
+F 0 "SW2" V 6854 1398 50  0000 L CNN
+F 1 "SW_Push" V 6945 1398 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 6900 1450 50  0001 C CNN
+F 3 "~" H 6900 1450 50  0001 C CNN
+	1    6900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 6064637F
+P 7550 1250
+F 0 "SW3" V 7504 1398 50  0000 L CNN
+F 1 "SW_Push" V 7595 1398 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 7550 1450 50  0001 C CNN
+F 3 "~" H 7550 1450 50  0001 C CNN
+	1    7550 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 6064C04C
+P 7750 3100
+F 0 "J1" H 7858 3381 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7858 3290 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7750 3100 50  0001 C CNN
+F 3 "~" H 7750 3100 50  0001 C CNN
+	1    7750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 6064CE51
+P 6950 3750
+F 0 "RV1" H 6881 3796 50  0000 R CNN
+F 1 "R_POT" H 6881 3705 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6950 3750 50  0001 C CNN
+F 3 "~" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x16_Male J3
+U 1 1 6064DF11
+P 9050 2750
+F 0 "J3" H 9158 3631 50  0000 C CNN
+F 1 "Conn_01x16_Male" H 9158 3540 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9050 2750 50  0001 C CNN
+F 3 "~" H 9050 2750 50  0001 C CNN
+	1    9050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1050 6900 1050
+Wire Wire Line
+	6900 1050 7550 1050
+Connection ~ 6900 1050
+Text Label 6900 1050 0    50   ~ 0
+3V3
+Text Label 6300 1450 0    50   ~ 0
+inc_bt
+Text Label 6900 1450 0    50   ~ 0
+enter_bt
+Text Label 7550 1450 0    50   ~ 0
+dec_bt
+Text Label 3800 3700 0    50   ~ 0
+inc_bt
+Text Label 3050 3800 2    50   ~ 0
+dec_bt
+Text Label 3800 3800 0    50   ~ 0
+enter_bt
+Text Label 6950 3600 0    50   ~ 0
+3V3
+Text Label 6950 3900 0    50   ~ 0
+gnd2
+Text Label 7100 3750 0    50   ~ 0
+adc
+Text Label 3800 3200 0    50   ~ 0
+adc
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 60656205
+P 6750 2250
+F 0 "J2" H 6778 2226 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 6778 2135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6750 2250 50  0001 C CNN
+F 3 "~" H 6750 2250 50  0001 C CNN
+	1    6750 2250
+	1    0    0    -1  
+$EndComp
+Text Label 6550 2050 2    50   ~ 0
+gnd1
+Text Label 6550 2250 2    50   ~ 0
+TX
+Text Label 6550 2350 2    50   ~ 0
+RX
+Text Label 3050 3100 2    50   ~ 0
+TX
+Text Label 3800 3100 0    50   ~ 0
+RX
+Text Label 7950 3100 0    50   ~ 0
+5V
+Text Label 7950 3200 0    50   ~ 0
+sda
+Text Label 7950 3300 0    50   ~ 0
+scl
+Text Label 4650 3400 2    50   ~ 0
+scl
+Text Label 5400 3600 0    50   ~ 0
+sda
+Text Label 4650 2700 2    50   ~ 0
+3V3
+Text Label 3800 2500 0    50   ~ 0
+gnd
+Text Label 4650 4900 2    50   ~ 0
+gnd2
+Text Label 3050 3600 2    50   ~ 0
+gnd1
+Text Label 4650 2600 2    50   ~ 0
+5V
+Text Label 7950 3000 0    50   ~ 0
+gnd3
+Text Label 5400 2500 0    50   ~ 0
+gnd3
+$EndSCHEMATC

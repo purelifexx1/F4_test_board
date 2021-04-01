@@ -1,0 +1,6 @@
+schedule.cpp:10:1:schedule::schedule(uint32_t)	16	static
+schedule.cpp:14:6:void schedule::set_cycle(uint32_t)	16	static
+schedule.cpp:18:6:void schedule::start_timer()	16	static
+schedule.cpp:23:6:void schedule::stop_timer()	16	static
+schedule.cpp:27:6:void schedule::set_callback(void (*)())	16	static
+schedule.cpp:32:6:void schedule::looping()	16	static
